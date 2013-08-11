@@ -1,0 +1,31 @@
+min_peers = 1
+max_peers = 1000
+
+# Same as above but for seeding completed torrents (-1 = same as downloading)
+#min_peers_seed = 10
+#max_peers_seed = 50
+
+download_rate = 0
+upload_rate = 0
+
+directory = ~/Торренты
+
+session = ~/Торренты/session
+
+# Watch a directory for new torrents, and stop those that have been
+# deleted.
+schedule = watch_directory,5,5,load_start=~/Торренты/session/*.torrent
+#schedule = untied_directory,5,5,stop_untied=
+
+# Close torrents when diskspace is low.
+schedule = low_diskspace,5,60,close_low_diskspace=100M
+
+port_range = 6890-6999
+
+port_random = no
+
+check_hash = yes
+
+use_udp_trackers = no
+
+session_save = yes

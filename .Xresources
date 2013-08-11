@@ -1,0 +1,7 @@
+emacs.background: black
+emacs.cursorColor: green
+emacs.cursorBlink: on
+emacs.foreground: lightgrey
+emacs.font: -*-droid sans mono-*-*-*-*-*-*-*-*-*-*-iso10646-1
+emacs.geometry: 85x25
+
